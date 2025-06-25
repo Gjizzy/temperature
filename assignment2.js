@@ -3,3 +3,7 @@ function convertToCelsiusToFahrenheit() {
     let fahrenheit = (celsius * 9/5) + 32;
     document.getElementById("results").innerHTML = (fahrenheit + " Fahrenheit");
 }
+
+
+
+

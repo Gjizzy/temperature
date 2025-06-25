@@ -1,4 +1,5 @@
 console.log("testing the for loop"):
+
 // FOR LOOP
 // start point
 // interval
@@ -8,14 +9,13 @@ console.log("testing the for loop"):
 
 /*for(let i=0; i<4; i++){
     //document.write(My for is working")
-    
+    console.log("My for is working, value=-+1)
 }
-<li>While <button onclick="startCountdown()">Start CountDown </button> </li>
-  
+//Activity 3
 for(let i-1; i<4; i++){
     //document.write("My for is working"
     console.log("value = "+i);
-}*/
+}
 
 /*for(let i=1; i<=10; i++){
     //document.write("My for is working")
@@ -28,34 +28,12 @@ console.log("value - "+1);
 }
 
 //Mini challenge
+/*const numTwo = 2;
+let result =0;
 
-
-
-
-
-
-
-
-
-
-
-for(let i-1;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//loop i to 10
+for(let i=0;"<=10;i++){
+result = numTwo * 1;
 
 function multuTable(){
   const num = 2;
@@ -66,98 +44,28 @@ function multuTable(){
   console.log('${num} x ${i} = ${num*i}');
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function multiTable(){}
+function multiTable(){
 let num = prompt("Enter the num: ");
-
-document.onwebkittransitionend('<h2>Table of ${num}</h2>')
-
-
-
-
-
-
+document.writeIn('<h2>Table of ${num}</h2>')
+//start =1 , stop <11 , interval 1 by 1
+    for(let i=1; i<11 ; i++){
+ document.writeln(`<p> ${num} x ${i} = ${num*i} </p>`);
+   }
+}
 //WHILE LOOP
 //start, stop, increment
-
+console.log("----- WHILE -----")
 let i=0; // start point
-while(i<=10){ // stop condition
+while(i<=4){ // stop condition
     console.log(i);
     i++; // increment/interval
 }
 
 //DO-WHILE
 //start, stop,increment
-console.log("-----Do WHILE")
+console.log("-----Do WHILE----");
 
-let j=0;//start point
+let j=10;//start point
 
 
 do{
@@ -169,14 +77,20 @@ j++; // increment
 
 }while(j<=4);//stop condition
 
+// while function
+function startCountDown(){
+let seconds = 10;
+let results="";
 
 while(seconds>0){
-    result = <p> Launching in .... ${seconds} </p>';
+    result += '<p> Launching in .... ${seconds} </p>';
     console.log(result);
     seconds--;
 }
 
-document.getElementById("results").inner=SpeechRecognitionResultList;
+document.getElementById("output").inneHTML=result;
+}
+//do-while function
 function passPrompt(){
     let correctPass = "1234";
     let userInput;
@@ -185,20 +99,20 @@ function passPrompt(){
     do{
         userInput = prompt("Enter the password: ");
         result += "<p> User input was: " + userInput + "</p>";
-    }while(userInput ==correctPass)
+    }while(userInput !== correctPass)
 
-        results+= "<p>Welcome to the system</p>";
+        result+= "<p>Welcome to the system</p>";
         document.getElementById("output").innerHTML=results;
 }
 
 //loop function
 function showProducts(){
-    let products = [];// array
+    let products = ["laptop","display","camera","speaker"];// array
     for(let i=0;i<4;i++){
-       console.log(products);
-for(let i=0;i<products.length;i++)
-results = '<li> ${products[i]} </li>';
-}
+       let result ="";
 
+       for(let i=0;i<products.length;i++){
+        result += `<li class="test"> ${products[i]} </li>`; Add commentMore actions
+    }
+    document.getElementById("output").innerHTML=result; 
 }
-
