@@ -1,9 +1,15 @@
 let positionleft = 350;
-let character = document
+let character = document.getElementById("character");
 
-
-positionLeft = positionLeft-5;
+   function moveLeft(){
+    if(positionLeft>0){
+    positionLeft = positionLeft-5;
+    console.style.left=positionLeft +"px";
+    character.style.background="red";
 }
-console.log{positionLeft);
-    console.log(positionsLeft);
-console.log(positionsLeft);
+console.log(positionLeft);
+}
+
+function moveRight() {
+    //setInterval()
+}

@@ -25,12 +25,13 @@ greet("Tim");
 greet("Alex")
 
 //Example #3 with 2 parameter (inputs)
-function greats2(name1="someone",name2){
+function great2(name1="someone",name2){
     console.log('Hello ${name1} and ${name2}, welcome!');
 }
 
 greet2("John","Smith");
-greet2();
+greet2("Alex");
+
 
 //Chalenge 1: Double the Number
 // Task:
@@ -58,7 +59,7 @@ function add(num1=0,num2=0){
     console.log('The total is ${num1 + num2}');
 }
 
-add{3,5};//8
+add(3,5);//8
 add();
 add(4);
 
@@ -71,8 +72,11 @@ add(4);
 function combineNames(firstName="Unknown",lastName"Unknown"){
 console.log('${firstName}';
 }
-   
-combineNames("Alice",Johnson"); //Alice Johnson
+
+
+
+
+combineNames("Alice","Johnson"); //Alice Johnson
 combineNames("Alice");// Alice Unknown
 combineNames(); //Unknown Unknown
 
@@ -82,9 +86,10 @@ combineNames(); //Unknown Unknown
 // - Create a function called 'convertToSeconds' that takes one parameter, 'minutes' .
 // - The function should return the number of seconds by multyplying the minutes by 60.
 // - Call the function with differant values of minutes and print the results.
+
 function convertToSeconds(){
     let min=prompt("Enter minutes: ");
-    document.getElementById{"results"}.innerHTML += '<p> The covesion is: $(min *60} </p>';</p>
+    document.getElementById("results").innerHTML += '<p> The coversion is: $(min *60} </p>';
 }
 
 
